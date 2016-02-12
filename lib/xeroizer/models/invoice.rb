@@ -59,8 +59,8 @@ module Xeroizer
       guid         :branding_theme_id
       string       :url
       string       :type
-      date         :date
-      date         :due_date
+      datetime_utc :date
+      datetime     :due_date
       string       :status
       string       :line_amount_types
       decimal      :sub_total, :calculated => true
